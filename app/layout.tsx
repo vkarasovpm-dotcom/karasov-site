@@ -31,9 +31,14 @@ export const metadata: Metadata = {
     "AI Engineer",
     "PRINCE2",
     "n8n",
+    "Make.com",
     "Claude API",
+    "LangGraph",
+    "CrewAI",
     "MVP",
     "automation",
+    "multi-agent AI",
+    "fractional PM",
   ],
   authors: [{ name: "Vitalii Karasov" }],
   metadataBase: new URL(siteUrl),
@@ -45,7 +50,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: "/images/portrait-hero.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Vitalii Karasov",
