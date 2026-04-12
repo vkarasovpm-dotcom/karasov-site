@@ -74,7 +74,7 @@ const jsonLd = {
   email: "vitalii@karasov.co",
   sameAs: [
     "https://github.com/vkarasovpm-dotcom",
-    "https://www.linkedin.com/in/vitalii-karasov-04529b236",
+    "https://www.linkedin.com/in/vitaliikarasov/",
     "https://www.youtube.com/@TheHumanGambit",
     "https://www.upwork.com/freelancers/~01af851972931ea5c2",
   ],

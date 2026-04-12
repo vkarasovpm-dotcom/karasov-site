@@ -154,7 +154,7 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.75, ease }}
             >
-              PRODUCT MANAGER&nbsp;·&nbsp;AI ENGINEER&nbsp;·&nbsp;PRINCE2 CERTIFIED
+              AI AUTOMATION ENGINEER&nbsp;·&nbsp;PRODUCT MANAGER&nbsp;·&nbsp;MSc&nbsp;·&nbsp;PRINCE2
             </motion.p>
 
             {/* Buttons */}
@@ -183,6 +183,17 @@ export default function HeroSection() {
                 Let&apos;s Talk ↓
               </motion.button>
             </motion.div>
+
+            {/* Metrics */}
+            <motion.p
+              className="text-sm text-[#555555] tracking-wide text-center md:text-left"
+              style={{ fontFamily: "var(--font-jetbrains-mono), monospace" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 1.0, ease }}
+            >
+              3h → 2min&nbsp;&nbsp;·&nbsp;&nbsp;30 posts for $1&nbsp;&nbsp;·&nbsp;&nbsp;GTM plan in &lt;5min
+            </motion.p>
           </div>
         </div>
       </div>

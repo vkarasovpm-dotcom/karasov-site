@@ -5,24 +5,24 @@ import { motion, useInView } from "framer-motion";
 
 const timeline = [
   {
-    year: "2026",
-    role: "AI Product Engineer — Independent",
-    desc: "Fractional Product Manager & AI Engineer. Helping founders go from idea to working MVP — strategy, build, and launch in under a week.",
+    year: "2026 — Present",
+    role: "AI Automation Engineer — Independent",
+    desc: "Scoping, building, and deploying AI automation systems for founders and small teams.\n\nMulti-agent research (3h → 2min) · AI content engine (30 posts for $1) · Market intelligence (<5min to GTM) · Lead qualification (5 sec/lead).",
   },
   {
     year: "2025",
     role: "Product Manager & AI Lead — Human Gambit Media",
-    desc: "Built AI content pipeline. Reduced production time by 30%.",
+    desc: "Built content production pipeline. Automated asset tagging and assignment.\n−10 hours/week manual overhead · −30% turnaround time.\nLed distributed team across multiple time zones.\nZero rendering errors on broadcast delivery.",
   },
   {
     year: "2023",
     role: "Product Manager — Imperium Academy (EdTech)",
-    desc: "Led product launches and platform development.",
+    desc: "Launched EdTech platform 0→1. Users across US, EU, and Asia.\n+15% user retention via GA4-driven onboarding optimization.\nMulti-market expansion: GDPR/COPPA compliance.",
   },
   {
     year: "2022",
     role: "Crisis Project Manager — SOS Children's Villages",
-    desc: "Managed operations across multiple locations. 1.5M+ PLN budget.",
+    desc: "1.5M+ PLN portfolio · 2,000+ international entities.\nZero non-compliance findings across all UN/EU audits.\n−95% processing errors.\nCoordinated in 4 languages: EN, PL, UA, RU.",
   },
 ];
 
@@ -83,7 +83,7 @@ function TimelineItem({
           {item.role}
         </h3>
         <p
-          className="text-[#666666] text-sm leading-[1.75]"
+          className="text-[#666666] text-sm leading-[1.75] whitespace-pre-line"
           style={{ fontFamily: "var(--font-inter), sans-serif" }}
         >
           {item.desc}
