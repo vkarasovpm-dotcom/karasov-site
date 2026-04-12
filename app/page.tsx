@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import IntroSection from "./components/IntroSection";
+import PainPointsSection from "./components/PainPointsSection";
 import WorkSection from "./components/WorkSection";
 import ExperienceSection from "./components/ExperienceSection";
 import StackSection from "./components/StackSection";
+import ProcessSection from "./components/ProcessSection";
 import AboutSection from "./components/AboutSection";
 import StrategySection from "./components/StrategySection";
 import ContactSection from "./components/ContactSection";
@@ -25,13 +26,15 @@ export default function Home() {
       <main>
         <HeroSection />
         <Divider />
-        <IntroSection />
+        <PainPointsSection />
         <Divider />
         <WorkSection />
         <Divider />
         <ExperienceSection />
         <Divider />
         <StackSection />
+        <Divider />
+        <ProcessSection />
         <Divider />
         <AboutSection />
         <Divider />

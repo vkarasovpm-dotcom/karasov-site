@@ -124,7 +124,7 @@ export default function HeroSection() {
               </motion.span>
             </h1>
 
-            {/* Tagline */}
+            {/* Tagline line 1 */}
             <motion.p
               className="text-xl md:text-2xl text-white/80 leading-snug"
               style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
@@ -132,7 +132,18 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.55, ease }}
             >
-              Product Manager who builds. From strategy to working AI-powered MVP — without a dev team.
+              I build AI-powered systems that replace manual workflows.
+            </motion.p>
+
+            {/* Tagline line 2 */}
+            <motion.p
+              className="text-lg md:text-xl text-white/60 leading-snug"
+              style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.65, ease }}
+            >
+              Product Manager who ships — from problem definition to working system. No dev team. Usually takes days.
             </motion.p>
 
             {/* Tags */}
@@ -141,7 +152,7 @@ export default function HeroSection() {
               style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.65, ease }}
+              transition={{ duration: 0.6, delay: 0.75, ease }}
             >
               PRODUCT MANAGER&nbsp;·&nbsp;AI ENGINEER&nbsp;·&nbsp;PRINCE2 CERTIFIED
             </motion.p>
@@ -151,7 +162,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 pt-4"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.85, ease }}
+              transition={{ duration: 0.6, delay: 0.9, ease }}
             >
               <motion.button
                 onClick={() => scrollTo("#work")}
@@ -160,7 +171,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                View Work ↓
+                See What I Built ↓
               </motion.button>
               <motion.button
                 onClick={() => scrollTo("#contact")}
@@ -169,7 +180,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Get in Touch ↓
+                Let&apos;s Talk ↓
               </motion.button>
             </motion.div>
           </div>

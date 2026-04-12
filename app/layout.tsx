@@ -25,7 +25,7 @@ const siteUrl = "https://karasov.co";
 export const metadata: Metadata = {
   title: "Vitalii Karasov — Product Manager & AI Engineer",
   description:
-    "Product Manager who builds. From strategy to working AI-powered MVP — without a dev team. PRINCE2 certified, 4+ years, fast delivery.",
+    "I build AI-powered systems that replace manual workflows. Product Manager who ships — from problem definition to working system. PRINCE2 certified.",
   keywords: [
     "Product Manager",
     "AI Engineer",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vitalii Karasov — Product Manager & AI Engineer",
     description:
-      "Product Manager who builds. From strategy to working AI-powered MVP — without a dev team. PRINCE2 certified, 4+ years, fast delivery.",
+      "I build AI-powered systems that replace manual workflows. Product Manager who ships — from problem definition to working system. PRINCE2 certified.",
     type: "website",
     url: siteUrl,
     images: [
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vitalii Karasov — Product Manager & AI Engineer",
     description:
-      "Product Manager who builds. From strategy to working AI-powered MVP — without a dev team. PRINCE2 certified, 4+ years, fast delivery.",
+      "I build AI-powered systems that replace manual workflows. Product Manager who ships — from problem definition to working system. PRINCE2 certified.",
   },
 };
 
