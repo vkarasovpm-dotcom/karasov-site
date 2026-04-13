@@ -265,7 +265,7 @@ function MobileAccordion({
 
 export default function StackSection() {
   return (
-    <section id="stack" className="py-20 md:py-32 px-6 bg-[#0A0A0A]">
+    <section id="stack" className="py-14 md:py-24 px-6 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto">
         <motion.p
           className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-4"

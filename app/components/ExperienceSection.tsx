@@ -12,12 +12,12 @@ const timeline = [
   {
     year: "2025",
     role: "Product Manager & AI Lead — Human Gambit Media",
-    desc: "Built content production pipeline. Automated asset tagging and assignment.\n−10 hours/week manual overhead · −30% turnaround time.\nLed distributed team across multiple time zones.\nZero rendering errors on broadcast delivery.",
+    desc: "Owning content product for The Human Gambit — analytical YouTube channel covering power systems, markets, and geopolitics (10 episodes, Ukrainian + English).\nEditorial strategy, production pipeline, distribution, performance analytics.\n\nBuilt AI content pipeline (Make.com + OpenAI API). Automated asset tagging and assignment.\n−10 hours/week manual overhead · −30% turnaround time.\nLed distributed team across multiple time zones.\nZero rendering errors on broadcast delivery.",
   },
   {
     year: "2023",
     role: "Product Manager — Imperium Academy (EdTech)",
-    desc: "Launched EdTech platform 0→1. Users across US, EU, and Asia.\n+15% user retention via GA4-driven onboarding optimization.\nMulti-market expansion: GDPR/COPPA compliance.",
+    desc: "Launched EdTech platform 0→1 across US, EU, and Asia.\n+15% user retention via GA4-driven onboarding optimization.\nMulti-market expansion: GDPR/COPPA compliance.\nSCORM/xAPI alignment for enterprise integration.",
   },
   {
     year: "2022",
@@ -95,7 +95,7 @@ function TimelineItem({
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-28 md:py-40 px-6 bg-[#0D0D0D]">
+    <section id="experience" className="py-16 md:py-28 px-6 bg-[#0D0D0D]" style={{ backgroundImage: "linear-gradient(rgba(212,168,83,0.022) 1px, transparent 1px)", backgroundSize: "100% 60px" }}>
       <div className="max-w-7xl mx-auto">
         <motion.p
           className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-4"

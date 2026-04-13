@@ -22,14 +22,14 @@ const mainWorks: WorkCard[] = [
   {
     title: "AI CONTENT ENGINE",
     description:
-      "A media team was manually writing 30+ posts per week — research, drafting, and scheduling all done by hand. I built a closed-loop pipeline: Reddit trends feed via RAG into Claude API for drafting, Pinecone stores embeddings to prevent repetition, Buffer handles scheduling.\n\nResult: 30 posts for $1 in compute. Zero manual writing.",
+      "Writing branded content at scale — consistent voice, audience-relevant topics, multiple platforms — was taking hours every week with inconsistent results.\n\nBuilt a 6-scenario closed-loop pipeline: brand voice, audience pain points, and top-performing posts stored as vectors in Pinecone. Claude generates 6 post variants per topic using RAG context. Feedback loop auto-enriches the style bank from engagement data. Reddit monitoring keeps audience language current automatically.\n\nResult: 30 branded posts for $1 in API costs. Zero manual writing. System improves with each cycle.",
     tags: ["Make.com", "Claude API", "Pinecone", "Buffer", "RAG"],
     demoUrl: "https://www.loom.com/share/3e08552f874f407bad4b558bd0bdf9d8",
   },
   {
     title: "MARKET INTELLIGENCE SYSTEM",
     description:
-      "A founder was spending hours each week on competitor and industry research before sales calls. I built an n8n pipeline that runs Gemini Deep Research across 5 parallel tracks — competitors, pricing, tech trends, funding, regulation — and delivers a structured briefing to Airtable with a Slack ping.\n\nResult: GTM plan in under 5 minutes.",
+      "A founder needed competitive analysis and a go-to-market plan for a new product. Manual research took 3+ days and was outdated before it was finished.\n\nBuilt a form-triggered pipeline: 5 sub-workflows run in parallel — input validation, Gemini Deep Research autonomous agent, market strategy synthesis, GTM planning, and quality evaluation. Grounding ratio 1.0 — every claim backed by a real web source. Results delivered to Airtable and Slack automatically.\n\nResult: competitive analysis + quality scoring + 90-day GTM plan in under 5 minutes.",
     tags: ["n8n", "Gemini Deep Research", "Airtable", "Slack"],
     demoUrl: "https://www.loom.com/share/6a08c5221efd444db95ee0275247f288",
   },
@@ -351,7 +351,7 @@ export default function WorkSection() {
   const osTitleInView = useInView(osTitleRef, { once: true, margin: "-60px 0px" });
 
   return (
-    <section id="work" className="py-20 md:py-32 px-6">
+    <section id="work" className="py-14 md:py-24 px-6" style={{ backgroundImage: "radial-gradient(circle, rgba(212,168,83,0.04) 1px, transparent 1px)", backgroundSize: "28px 28px" }}>
       <div className="max-w-7xl mx-auto">
 
         {/* SELECTED WORK */}

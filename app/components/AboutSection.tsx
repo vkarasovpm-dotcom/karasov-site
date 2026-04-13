@@ -14,10 +14,10 @@ const galleryImages = [
 ];
 
 const bioParagraphs = [
-  "I'm Vitalii Karasov — a product manager who doesn't just write specs and wait. I take products from zero to launch: strategy, architecture, build, deploy.",
-  "PRINCE2 certified with an MSc in Strategic Project Management. Over 4+ years I've launched EdTech platforms, built AI-powered content pipelines, and managed crisis operations with budgets exceeding 1.5M PLN — coordinating teams, stakeholders, and logistics under pressure.",
-  "Today I work as a fractional product lead for founders and small teams: scoping MVPs, building multi-agent AI systems, and shipping products in days instead of months. One person, full ownership, no handoffs.",
-  "Beyond products, I document the world through a lens. Aesthetics and structure matter to me — whether it's the architecture of an AI pipeline or the composition of a photograph.",
+  "I'm Vitalii Karasov — a product manager who builds.",
+  "MSc in Strategic Project Management, Lazarski University Warsaw. PRINCE2 certified. 4+ years running products — EdTech platform launch, AI content pipelines, crisis response operations with a 1.5M+ PLN budget.",
+  "Now I am building AI automation systems independently. All in production.",
+  "Beyond systems — I document the world through a lens on Panasonic Lumix S5II. Aesthetics and structure matter to me — whether it's the architecture of an AI pipeline or the composition of a photograph.",
 ];
 
 const tags = ["PRINCE2", "MSc Strategy", "EdTech", "AI Systems", "Photography"];
@@ -163,7 +163,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-20 md:py-32 px-6">
+    <section id="about" className="py-14 md:py-24 px-6" style={{ backgroundImage: "linear-gradient(rgba(212,168,83,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(212,168,83,0.018) 1px, transparent 1px)", backgroundSize: "80px 80px" }}>
       <div className="max-w-7xl mx-auto">
         <motion.p
           className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-4"

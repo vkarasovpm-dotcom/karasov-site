@@ -19,7 +19,7 @@ export default function PainPointsSection() {
   const isInView = useInView(ref, { once: true, margin: "-80px 0px" });
 
   return (
-    <section className="py-28 md:py-40 px-6">
+    <section className="py-14 md:py-24 px-6">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <motion.p

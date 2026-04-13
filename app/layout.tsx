@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 const siteUrl = "https://karasov.co";
 
 export const metadata: Metadata = {
-  title: "Vitalii Karasov — Product Manager & AI Engineer",
+  title: "Vitalii Karasov — Product Manager & AI Automation Engineer",
   description:
     "I build AI-powered systems that replace manual workflows. Product Manager who ships — from problem definition to working system. PRINCE2 certified.",
   keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Vitalii Karasov" }],
   metadataBase: new URL(siteUrl),
   openGraph: {
-    title: "Vitalii Karasov — Product Manager & AI Engineer",
+    title: "Vitalii Karasov — Product Manager & AI Automation Engineer",
     description:
       "I build AI-powered systems that replace manual workflows. Product Manager who ships — from problem definition to working system. PRINCE2 certified.",
     type: "website",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vitalii Karasov — Product Manager & AI Engineer",
+    title: "Vitalii Karasov — Product Manager & AI Automation Engineer",
     description:
       "I build AI-powered systems that replace manual workflows. Product Manager who ships — from problem definition to working system. PRINCE2 certified.",
   },

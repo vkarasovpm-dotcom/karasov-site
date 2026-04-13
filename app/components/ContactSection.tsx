@@ -35,7 +35,7 @@ const socials = [
 export default function ContactSection() {
   return (
     <>
-      <section id="contact" className="py-20 md:py-40 px-6">
+      <section id="contact" className="py-14 md:py-28 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.p
             className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-8"
@@ -45,7 +45,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
           >
-            Let&apos;s work together
+            Contact
           </motion.p>
 
           <motion.h2
@@ -62,19 +62,18 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
-            Have something to automate?
+            Working on something that needs to move faster?
           </motion.h2>
 
           <motion.p
-            className="text-[#888888] text-base md:text-lg leading-relaxed mb-10 max-w-xl mx-auto"
+            className="text-white/50 text-xl md:text-2xl leading-relaxed mb-10 max-w-xl mx-auto"
             style={{ fontFamily: "var(--font-inter), sans-serif" }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            If your team is doing manually what a well-designed system could do
-            in seconds — that&apos;s solvable. Let&apos;s figure out what&apos;s worth building.
+            Let&apos;s talk.
           </motion.p>
 
           <motion.div

@@ -128,7 +128,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center py-24 md:py-0 overflow-hidden">
+    <section ref={heroRef} className="relative min-h-screen flex items-center py-16 md:py-0 overflow-hidden">
       {/* ── Background ── */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Parallax bg image */}
@@ -167,7 +167,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.2, ease }}
           >
             <div
-              className="relative w-[200px] h-[260px] md:w-[320px] md:h-[420px] lg:w-[380px] lg:h-[480px] rounded-2xl overflow-hidden flex-shrink-0"
+              className="relative w-[150px] h-[195px] md:w-[320px] md:h-[420px] lg:w-[380px] lg:h-[480px] rounded-2xl overflow-hidden flex-shrink-0"
               style={{
                 border: "2px solid rgba(212,168,83,0.2)",
                 boxShadow: "0 0 60px rgba(212,168,83,0.08)",
