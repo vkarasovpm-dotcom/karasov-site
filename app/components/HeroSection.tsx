@@ -161,7 +161,7 @@ export default function HeroSection() {
 
           {/* Portrait — first in DOM (top on mobile), right on desktop */}
           <motion.div
-            className="order-first md:order-last flex justify-center md:justify-end translate-y-1 md:translate-y-0"
+            className="order-first md:order-last flex justify-center md:justify-end"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease }}
@@ -187,7 +187,7 @@ export default function HeroSection() {
           <div className="order-last md:order-first flex flex-col gap-6 text-center md:text-left">
             {/* Name — staggered lines */}
             <h1
-              className="text-white leading-none translate-y-1 md:translate-y-8"
+              className="text-white leading-none md:translate-y-8"
               style={{
                 fontFamily: "var(--font-space-grotesk), sans-serif",
                 fontWeight: 700,
@@ -219,7 +219,7 @@ export default function HeroSection() {
 
             {/* Tagline line 1 */}
             <motion.p
-              className="text-xl md:text-2xl text-white/80 leading-snug"
+              className="text-xl md:text-2xl text-white/80 leading-snug -translate-y-1 md:translate-y-0"
               style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -230,7 +230,7 @@ export default function HeroSection() {
 
             {/* Tagline line 2 */}
             <motion.p
-              className="text-lg md:text-xl text-white/60 leading-snug"
+              className="text-lg md:text-xl text-white/60 leading-snug -translate-y-1 md:translate-y-0"
               style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -241,7 +241,7 @@ export default function HeroSection() {
 
             {/* Tags */}
             <motion.p
-              className="text-base text-[#999999] tracking-[0.08em]"
+              className="text-base text-[#999999] tracking-[0.08em] -translate-y-1 md:translate-y-0"
               style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
