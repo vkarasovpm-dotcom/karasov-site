@@ -157,7 +157,7 @@ export default function HeroSection() {
 
       {/* ── Content ── */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 md:gap-16 items-center md:translate-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 md:gap-16 items-center md:translate-y-16">
 
           {/* Portrait — first in DOM (top on mobile), right on desktop */}
           <motion.div
@@ -215,7 +215,7 @@ export default function HeroSection() {
               </motion.span>
             </h1>
 
-            <div className="h-2 md:h-4" />
+            <div className="md:h-4" />
 
             {/* Tagline line 1 */}
             <motion.p
@@ -250,7 +250,7 @@ export default function HeroSection() {
               AI AUTOMATION ENGINEER&nbsp;·&nbsp;PRODUCT MANAGER&nbsp;·&nbsp;MSc&nbsp;·&nbsp;PRINCE2
             </motion.p>
 
-            <div className="h-1 md:h-2" />
+            <div className="md:h-2" />
 
             {/* Buttons */}
             <motion.div

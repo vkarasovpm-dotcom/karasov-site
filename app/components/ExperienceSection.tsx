@@ -12,7 +12,7 @@ const timeline = [
   {
     year: "2025",
     role: "Product Manager & AI Lead — Human Gambit Media",
-    desc: "Owning content product for The Human Gambit — analytical YouTube channel covering power systems, markets, and geopolitics (10 episodes, Ukrainian + English).\nEditorial strategy, production pipeline, distribution, performance analytics.\n\nBuilt AI content pipeline (Make.com + OpenAI API). Automated asset tagging and assignment.\n−10 hours/week manual overhead · −30% turnaround time.\nLed distributed team across multiple time zones.\nZero rendering errors on broadcast delivery.",
+    desc: "Led The Human Gambit — analytical media brand covering power systems, markets, and geopolitics.\nFull product ownership: editorial strategy, production, distribution, AI pipeline (Make.com + OpenAI API).\n−30% turnaround time · distributed team · broadcast delivery.",
   },
   {
     year: "2023",
