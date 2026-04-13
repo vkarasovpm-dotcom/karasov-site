@@ -157,7 +157,7 @@ export default function HeroSection() {
 
       {/* ── Content ── */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 md:gap-16 items-center md:translate-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 md:gap-16 items-center">
 
           {/* Portrait — first in DOM (top on mobile), right on desktop */}
           <motion.div
@@ -187,7 +187,7 @@ export default function HeroSection() {
           <div className="order-last md:order-first flex flex-col gap-6 text-center md:text-left">
             {/* Name — staggered lines */}
             <h1
-              className="text-white leading-none"
+              className="text-white leading-none md:translate-y-8"
               style={{
                 fontFamily: "var(--font-space-grotesk), sans-serif",
                 fontWeight: 700,

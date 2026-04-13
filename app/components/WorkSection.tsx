@@ -49,7 +49,7 @@ const openSourceWorks: WorkCard[] = [
       "After every photoshoot, I was spending 1–2 hours manually reviewing hundreds of RAW files. I defined the scoring criteria, designed the workflow, and built a CLI tool that reads RAW files, extracts EXIF data, and uses GPT Vision to score each photo 1–1000.\n\nProcessed 121 photos in 15 minutes for ~$0.35.",
     tags: ["Python", "OpenAI Vision API", "Pillow", "rawpy"],
     demoUrl: "https://www.loom.com/share/adb04c24f46540d8b544de8e488eb88c",
-    githubUrl: "https://github.com/vkarasovpm-dotcom/photo-culling-tool",
+    githubUrl: "https://github.com/vkarasovpm-dotcom/photo-ai-toolkit",
   },
   {
     title: "FREELANCER DEV TOOLKIT",
@@ -57,7 +57,7 @@ const openSourceWorks: WorkCard[] = [
       "I was repeating the same setup steps on every new project — scaffolding, linting, deploy scripts, client reports. I productized my workflow into a reusable toolkit: custom Claude Code commands for project init, automated code review, deploy checklists, and client-facing reports.\n\nSaved 2+ hours per project start.",
     tags: ["Claude Code", "Python", "Shell", "Git"],
     demoUrl: "https://www.loom.com/share/28366f5e5ffd4ad3a3e7f922e9afcf10",
-    githubUrl: "https://github.com/vkarasovpm-dotcom/freelancer-dev-toolkit",
+    githubUrl: "https://github.com/vkarasovpm-dotcom/freelancer-toolkit",
   },
 ];
 
@@ -351,7 +351,7 @@ export default function WorkSection() {
   const osTitleInView = useInView(osTitleRef, { once: true, margin: "-60px 0px" });
 
   return (
-    <section id="work" className="py-14 md:py-24 px-6" style={{ backgroundImage: "radial-gradient(circle, rgba(212,168,83,0.04) 1px, transparent 1px)", backgroundSize: "28px 28px" }}>
+    <section id="work" className="py-12 md:py-20 px-6" style={{ backgroundImage: "radial-gradient(circle, rgba(212,168,83,0.04) 1px, transparent 1px)", backgroundSize: "28px 28px" }}>
       <div className="max-w-7xl mx-auto">
 
         {/* SELECTED WORK */}

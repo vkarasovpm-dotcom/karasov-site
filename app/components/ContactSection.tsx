@@ -35,7 +35,7 @@ const socials = [
 export default function ContactSection() {
   return (
     <>
-      <section id="contact" className="py-14 md:py-28 px-6">
+      <section id="contact" className="py-12 md:py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.p
             className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-8"

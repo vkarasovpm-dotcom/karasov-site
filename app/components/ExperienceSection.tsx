@@ -95,7 +95,7 @@ function TimelineItem({
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-16 md:py-28 px-6 bg-[#0D0D0D]" style={{ backgroundImage: "linear-gradient(rgba(212,168,83,0.022) 1px, transparent 1px)", backgroundSize: "100% 60px" }}>
+    <section id="experience" className="py-12 md:py-20 px-6 bg-[#0D0D0D]" style={{ backgroundImage: "linear-gradient(rgba(212,168,83,0.022) 1px, transparent 1px)", backgroundSize: "100% 60px" }}>
       <div className="max-w-7xl mx-auto">
         <motion.p
           className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-4"

@@ -163,7 +163,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-14 md:py-24 px-6" style={{ backgroundImage: "linear-gradient(rgba(212,168,83,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(212,168,83,0.018) 1px, transparent 1px)", backgroundSize: "80px 80px" }}>
+    <section id="about" className="py-12 md:py-20 px-6" style={{ backgroundImage: "linear-gradient(rgba(212,168,83,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(212,168,83,0.018) 1px, transparent 1px)", backgroundSize: "80px 80px" }}>
       <div className="max-w-7xl mx-auto">
         <motion.p
           className="text-xs text-[#E8C46A]/60 tracking-[0.25em] uppercase mb-4"

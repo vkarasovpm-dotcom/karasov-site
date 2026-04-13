@@ -39,7 +39,7 @@ export default function ProcessSection() {
   const isInView = useInView(ref, { once: true, margin: "-80px 0px" });
 
   return (
-    <section id="process" className="py-14 md:py-24 px-6">
+    <section id="process" className="py-12 md:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.p
@@ -111,7 +111,7 @@ export default function ProcessSection() {
 
         {/* Info box */}
         <motion.div
-          className="max-w-3xl mt-12 bg-[#111111] border border-[#1A1A1A] rounded-xl p-6 flex flex-col gap-1 items-center text-center"
+          className="max-w-3xl md:max-w-5xl mt-12 bg-[#111111] border border-[#1A1A1A] rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:justify-around md:gap-8 gap-1 items-center text-center"
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
