@@ -4,6 +4,103 @@ import { useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+function HeroWorkflowBg() {
+  const nodes: { cx: number; cy: number; hi: boolean }[] = [
+    { cx: 100, cy: 190, hi: false },
+    { cx: 340, cy: 150, hi: false },
+    { cx: 590, cy: 170, hi: true },
+    { cx: 850, cy: 150, hi: false },
+    { cx: 1120, cy: 190, hi: false },
+    { cx: 100, cy: 390, hi: false },
+    { cx: 310, cy: 430, hi: false },
+    { cx: 570, cy: 390, hi: true },
+    { cx: 830, cy: 420, hi: false },
+    { cx: 1080, cy: 390, hi: false },
+    { cx: 160, cy: 590, hi: false },
+    { cx: 400, cy: 630, hi: false },
+    { cx: 650, cy: 590, hi: true },
+    { cx: 920, cy: 630, hi: false },
+    { cx: 1160, cy: 590, hi: false },
+    { cx: 280, cy: 790, hi: false },
+    { cx: 540, cy: 810, hi: false },
+    { cx: 800, cy: 790, hi: false },
+  ];
+
+  const edges = [
+    // Row 1
+    "M 100,190 C 220,190 220,150 340,150",
+    "M 340,150 C 465,150 465,170 590,170",
+    "M 590,170 C 720,170 720,150 850,150",
+    "M 850,150 C 985,150 985,190 1120,190",
+    // Row 2
+    "M 100,390 C 205,390 205,430 310,430",
+    "M 310,430 C 440,430 440,390 570,390",
+    "M 570,390 C 700,390 700,420 830,420",
+    "M 830,420 C 955,420 955,390 1080,390",
+    // Row 3
+    "M 160,590 C 280,590 280,630 400,630",
+    "M 400,630 C 525,630 525,590 650,590",
+    "M 650,590 C 785,590 785,630 920,630",
+    "M 920,630 C 1040,630 1040,590 1160,590",
+    // Row 4
+    "M 280,790 C 410,790 410,810 540,810",
+    "M 540,810 C 670,810 670,790 800,790",
+    // Left column vertical
+    "M 100,190 C 100,290 100,290 100,390",
+    "M 100,390 C 100,490 160,490 160,590",
+    "M 160,590 C 160,690 280,690 280,790",
+    // Center AI column vertical
+    "M 590,170 C 590,280 570,280 570,390",
+    "M 570,390 C 570,490 650,490 650,590",
+    "M 650,590 C 650,700 540,700 540,810",
+    // Second column
+    "M 340,150 C 340,290 310,290 310,430",
+    "M 310,430 C 310,530 400,530 400,630",
+    "M 400,630 C 400,710 280,710 280,790",
+    // Fourth column
+    "M 850,150 C 850,285 830,285 830,420",
+    "M 830,420 C 830,525 920,525 920,630",
+    "M 920,630 C 920,710 800,710 800,790",
+    // Right column
+    "M 1120,190 C 1120,290 1080,290 1080,390",
+    "M 1080,390 C 1080,490 1160,490 1160,590",
+  ];
+
+  return (
+    <svg
+      viewBox="0 0 1440 900"
+      preserveAspectRatio="xMidYMid slice"
+      className="block w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <radialGradient id="wfGlow" cx="30%" cy="50%" r="55%">
+          <stop offset="0%" stopColor="rgba(212,168,83,0.06)" />
+          <stop offset="100%" stopColor="rgba(212,168,83,0)" />
+        </radialGradient>
+      </defs>
+      <rect width="1440" height="900" fill="url(#wfGlow)" />
+      {edges.map((d, i) => (
+        <path key={i} d={d} fill="none" stroke="rgba(212,168,83,0.07)" strokeWidth="1" />
+      ))}
+      {nodes.map((n, i) => (
+        <rect
+          key={i}
+          x={n.cx - 40}
+          y={n.cy - 15}
+          width={80}
+          height={30}
+          rx={6}
+          fill={n.hi ? "rgba(212,168,83,0.05)" : "rgba(212,168,83,0.015)"}
+          stroke={n.hi ? "rgba(212,168,83,0.22)" : "rgba(212,168,83,0.09)"}
+          strokeWidth={n.hi ? 1.5 : 1}
+        />
+      ))}
+    </svg>
+  );
+}
+
 const ease = [0.16, 1, 0.3, 1] as const;
 
 export default function HeroSection() {
@@ -36,13 +133,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Parallax bg image */}
         <div ref={bgParallaxRef} className="absolute" style={{ inset: "-20%" }}>
-          <Image
-            src="/images/hero-bg.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-[0.12]"
-            priority
-          />
+          <HeroWorkflowBg />
         </div>
         {/* Radial amber glow centered behind left text column */}
         <div
@@ -66,7 +157,7 @@ export default function HeroSection() {
 
       {/* ── Content ── */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 md:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 md:gap-16 items-center md:translate-y-10">
 
           {/* Portrait — first in DOM (top on mobile), right on desktop */}
           <motion.div
@@ -93,7 +184,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Text — second in DOM (bottom on mobile), left on desktop */}
-          <div className="order-last md:order-first flex flex-col gap-4 text-center md:text-left">
+          <div className="order-last md:order-first flex flex-col gap-6 text-center md:text-left">
             {/* Name — staggered lines */}
             <h1
               className="text-white leading-none"
@@ -124,6 +215,8 @@ export default function HeroSection() {
               </motion.span>
             </h1>
 
+            <div className="h-2 md:h-4" />
+
             {/* Tagline line 1 */}
             <motion.p
               className="text-xl md:text-2xl text-white/80 leading-snug"
@@ -143,12 +236,12 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.65, ease }}
             >
-              Product Manager who ships — from problem definition to working system. No dev team. Usually takes days.
+              Product Manager who ships — from problem definition to working system. No dev team. Takes days, not months.
             </motion.p>
 
             {/* Tags */}
             <motion.p
-              className="text-base text-[#999999] tracking-[0.08em] uppercase"
+              className="text-base text-[#999999] tracking-[0.08em]"
               style={{ fontFamily: "var(--font-inter), sans-serif", fontWeight: 400 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -156,6 +249,8 @@ export default function HeroSection() {
             >
               AI AUTOMATION ENGINEER&nbsp;·&nbsp;PRODUCT MANAGER&nbsp;·&nbsp;MSc&nbsp;·&nbsp;PRINCE2
             </motion.p>
+
+            <div className="h-1 md:h-2" />
 
             {/* Buttons */}
             <motion.div

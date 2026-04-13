@@ -62,7 +62,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
-            Have a product to launch?
+            Have something to automate?
           </motion.h2>
 
           <motion.p
@@ -73,32 +73,34 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Whether you need a fractional PM, an AI-powered system, or someone
-            who can do both — let&apos;s talk. I typically reply within a few hours.
+            If your team is doing manually what a well-designed system could do
+            in seconds — that&apos;s solvable. Let&apos;s figure out what&apos;s worth building.
           </motion.p>
 
-          <motion.a
-            href="mailto:vitalii@karasov.co"
-            className="inline-block text-2xl md:text-3xl text-[#D4A853] hover:text-[#E8C46A] transition-colors duration-200 mb-4 tracking-wide"
-            style={{ fontFamily: "var(--font-space-grotesk), sans-serif", fontWeight: 700 }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            vitalii@karasov.co
-          </motion.a>
-
-          <motion.p
-            className="text-[#555555] text-sm mb-14"
-            style={{ fontFamily: "var(--font-inter), sans-serif" }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            Available remotely&nbsp;·&nbsp;Flexible hours
-          </motion.p>
+            <a
+              href="https://calendly.com/v-karasov-pm/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#D4A853] text-black font-semibold px-8 py-4 rounded-lg hover:bg-[#E8C46A] transition-colors duration-200 text-sm tracking-wide w-full sm:w-auto text-center"
+              style={{ fontFamily: "var(--font-space-grotesk), sans-serif" }}
+            >
+              Book a 30-min call →
+            </a>
+            <a
+              href="mailto:vitalii@karasov.co"
+              className="border border-[#D4A853]/50 text-[#D4A853] px-8 py-4 rounded-lg hover:bg-[#D4A853]/10 transition-colors duration-200 text-sm tracking-wide w-full sm:w-auto text-center"
+              style={{ fontFamily: "var(--font-space-grotesk), sans-serif" }}
+            >
+              Email directly →
+            </a>
+          </motion.div>
 
           {/* Social links — icon + text */}
           <motion.div
